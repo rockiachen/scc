@@ -10,8 +10,8 @@ Created on Mon Jul 22 19:40:11 2019
 # define input_file path and submit_file here
 input_file = ''
 submit_file = ''
-f_write = open(input_file, 'w', encoding='utf-8') 
-with open(submit_file, 'r', encoding='utf-8') as f:
+f_write = open(submit_file, 'w', encoding='utf-8') 
+with open(input_file, 'r', encoding='utf-8') as f:
     lines = f.read().split('\n\n')
     for line in lines:
         if line == '':
